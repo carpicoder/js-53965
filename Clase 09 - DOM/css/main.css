@@ -1,0 +1,20 @@
+/* .titulo-principal {
+    color: red;
+} */
+
+.titulo-secundario {
+    color: blue;
+}
+
+.parrafo-principal:not(.color-negro) {
+    color: red;
+}
+
+.rojo {
+    color: red;
+}
+
+.producto {
+    background-color: lightcoral;
+    padding-inline: 1rem;
+}
