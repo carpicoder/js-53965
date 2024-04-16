@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --clr-black: #1c1c1c;
+    --clr-white: #f2ebd9;
+    --clr-accent: #ff3c00;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.header {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding-block: 1rem;
+}
+
+.main {
+    padding-block: 2rem;
+}
+
+.titulo {
+    margin-bottom: 1rem;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.producto {
+    background-color: var(--clr-black);
+    padding: .5rem;
+    border-radius: 1rem;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-img {
+    border-radius: .75rem;
+}
+
+.producto-btn {
+    border-radius: .75rem;
+    border: 0;
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    padding: .5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    border: 2px solid var(--clr-accent);
+    transition: .2s;
+}
+
+.producto-btn:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.carrito-producto {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-black);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: var(--clr-white);
+}
+
+.carrito-producto-btn {
+    background-color: var(--clr-white);
+    border: 0;
+    padding: .25rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.footer {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding-block: 2rem;
+}
